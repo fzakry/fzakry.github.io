@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fakhrul Zakry | Digital Growth Strategist & APAC Business Leader</title>
+    
+    <!-- SEO & GEO Meta Tags -->
+    <meta name="description" content="Fakhrul Zakry is a Senior Digital Strategy and Business Leader building scalable digital growth systems across the APAC region using technology, AI, and data analytics.">
+    <meta name="keywords" content="Digital Strategy, APAC Business Leader, Growth Strategy, AI Adoption, Technology Leadership, Digital Transformation, Fakhrul Zakry">
+    <meta name="author" content="Fakhrul Zakry">
+    <link rel="canonical" href="https://fakhrulzakry.com">
+    
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Fakhrul Zakry | APAC Digital Strategy & Business Leader">
+    <meta property="og:description" content="Building scalable digital growth systems combining business strategy, technology, AI, and analytics across the Asia-Pacific region.">
+    <meta property="og:image" content="https://placehold.co/1200x630/1a1a1a/ffffff?text=Fakhrul+Zakry">
+    <meta property="og:url" content="https://fakhrulzakry.com">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Fakhrul Zakry | Digital Growth Strategist">
+    <meta name="twitter:description" content="Building scalable digital growth systems across the APAC region.">
+    
+    <!-- Schema.org JSON-LD (GEO / Search Optimization) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Fakhrul Zakry",
+      "jobTitle": "Senior Digital Strategy and Business Leader",
+      "url": "https://fakhrulzakry.com",
+      "email": "fakhrulzakry@gmail.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/fakhrulzakry/"
+      ],
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "MBA (Marketing) - 4.00 GPA, Bachelor of Computer Science"
+      },
+      "knowsAbout": [
+        "Digital Strategy", "Business Strategy", "Growth Strategy", 
+        "AI Adoption", "Technology Leadership", "Digital Transformation",
+        "Performance Marketing", "Business Analytics", "APAC Market"
+      ],
+      "description": "I build scalable digital growth systems by combining business strategy, technology, AI, digital marketing and analytics to deliver measurable commercial impact across the Asia-Pacific region."
+    }
+    </script>
+
+    <!-- Fonts: Inter for that clean, tech-executive look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons: Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            500: '#14b8a6', // Subtle teal/slate accent
+                            600: '#0d9488',
+                            900: '#134e4a',
+                        },
+                        neutral: {
+                            850: '#1f1f1f',
+                            900: '#171717',
+                            950: '#0a0a0a',
+                        }
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Scrollbar for a premium feel */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+        .dark ::-webkit-scrollbar-thumb { background: #333; }
+        .light ::-webkit-scrollbar-thumb { background: #cbd5e1; }
+        
+        /* Utility classes for intersection observer animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Glassmorphism utilities */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        .dark .glass-card {
+            background: rgba(23, 23, 23, 0.6);
+            box-shadow: none;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .dark .glass-card:hover {
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            background: rgba(23, 23, 23, 0.9);
+        }
+
+        /* Timeline styling */
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            left: 15px;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background: #e2e8f0;
+        }
+        .dark .timeline-line::before {
+            background: #333;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 dark:bg-neutral-950 dark:text-gray-100 transition-colors duration-300 antialiased font-sans selection:bg-brand-500 selection:text-white relative">
+
+    <!-- Minimal Header (No Nav) -->
+    <header class="absolute w-full top-0 z-50 py-8 px-6 lg:px-12 flex justify-between items-center">
+        <div class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+            FAKHRUL ZAKRY<span class="text-brand-500">.</span>
+        </div>
+        
+        <button id="themeToggle" class="p-2.5 rounded-full bg-white/50 dark:bg-neutral-900/50 backdrop-blur-md border border-gray-200 dark:border-neutral-800 text-gray-600 dark:text-gray-300 hover:bg-white dark:hover:bg-neutral-800 transition-colors shadow-sm" aria-label="Toggle Theme">
+            <i class="ph ph-moon text-lg dark:hidden"></i>
+            <i class="ph ph-sun text-lg hidden dark:block"></i>
+        </button>
+    </header>
+
+    <main class="px-6 lg:px-12 max-w-7xl mx-auto pt-32 lg:pt-40 pb-16">
+        
+        <!-- Hero Section -->
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center min-h-[75vh]">
+            <div class="lg:col-span-7 space-y-8 animate-fade-in-up">
+                <div>
+                    <p class="text-sm font-semibold tracking-wider text-brand-600 dark:text-brand-500 uppercase mb-4">Digital Growth Strategist & APAC Business Leader</p>
+                    <h1 class="text-5xl lg:text-7xl font-bold tracking-tight text-gray-900 dark:text-white leading-[1.1]">
+                        Building Scalable <br/>
+                        <span class="text-gray-400 dark:text-gray-500">Digital Growth</span><br/>
+                        Across APAC.
+                    </h1>
+                </div>
+                
+                <p class="text-lg lg:text-xl text-gray-600 dark:text-gray-400 max-w-2xl leading-relaxed">
+                    Helping forward-thinking organisations scale through technology, AI, analytics, and business strategy.
+                </p>
+                
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="mailto:fakhrulzakry@gmail.com?subject=Executive%20Opportunity%20Inquiry%3A%20Digital%20Strategy%20%26%20Leadership" class="px-6 py-3.5 bg-gray-900 text-white dark:bg-white dark:text-gray-900 rounded-full font-medium hover:bg-gray-800 dark:hover:bg-gray-100 transition-all shadow-md hover:shadow-lg flex items-center gap-2">
+                        <i class="ph ph-envelope-simple text-xl"></i> Email Me
+                    </a>
+                    <a href="https://linkedin.com/in/fakhrulzakry" target="_blank" class="px-6 py-3.5 bg-white text-gray-900 dark:bg-neutral-900 dark:text-white border border-gray-200 dark:border-neutral-800 rounded-full font-medium hover:bg-gray-50 dark:hover:bg-neutral-800 transition-all flex items-center gap-2">
+                        <i class="ph ph-linkedin-logo text-xl"></i> Connect on LinkedIn
+                    </a>
+                </div>
+            </div>
+            
+            <div class="lg:col-span-5 flex justify-center lg:justify-end animate-fade-in-up" style="animation-delay: 0.2s;">
+                <div class="relative w-full max-w-md aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl group">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10"></div>
+                    <!-- Replace with actual professional photo -->
+                    <img src="/website/picturefz.png" alt="Fakhrul Zakry - Digital Growth Strategist" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute bottom-6 left-6 right-6 z-20 flex justify-between items-end">
+                        <div class="flex items-center gap-2 text-white/90 text-sm font-medium backdrop-blur-md bg-white/10 px-4 py-2 rounded-full border border-white/20">
+                            <i class="ph ph-map-pin"></i> Kuala Lumpur, MY
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Metrics -->
+        <section class="mt-20 lg:mt-32 border-y border-gray-200 dark:border-neutral-800 py-12 reveal">
+            <h2 class="sr-only">Impact & Scale Metrics</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12 text-center">
+                <div class="space-y-2">
+                    <p class="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white tracking-tight"><span class="counter" data-target="12">0</span>+</p>
+                    <p class="text-sm font-medium text-gray-500 uppercase tracking-wide">APAC Markets</p>
+                </div>
+                <div class="space-y-2">
+                    <p class="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white tracking-tight">€<span class="counter" data-target="10">0</span>M+</p>
+                    <p class="text-sm font-medium text-gray-500 uppercase tracking-wide">Budgets Managed</p>
+                </div>
+                <div class="space-y-2">
+                    <p class="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white tracking-tight"><span class="counter" data-target="10">0</span>+</p>
+                    <p class="text-sm font-medium text-gray-500 uppercase tracking-wide">Years Leadership</p>
+                </div>
+                <div class="space-y-2">
+                    <p class="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white tracking-tight"><span class="counter" data-target="28">0</span>+</p>
+                    <p class="text-sm font-medium text-gray-500 uppercase tracking-wide">Certifications</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Executive Profile -->
+        <section class="py-24 lg:py-32 reveal">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-4">
+                    <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Executive Profile</h2>
+                    <p class="mt-4 text-brand-600 dark:text-brand-500 font-medium">Connecting technology with commercial outcomes.</p>
+                </div>
+                <div class="lg:col-span-8 space-y-8 text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+                    <p>
+                        I build scalable digital growth systems by combining business strategy, technology, AI, digital marketing, and analytics to deliver measurable commercial impact across the Asia-Pacific region.
+                    </p>
+                    <p>
+                        With over 10 years of experience leading digital transformation, I bridge the gap between technical execution and business strategy. My foundation in Computer Science, combined with an MBA (Marketing) and a 4.00 GPA, allows me to translate complex technical capabilities into clear market advantages and operational excellence.
+                    </p>
+                    <p>
+                        I have successfully managed multi-million Euro investment portfolios, leading regional digital acquisition strategies, product optimization, and customer growth initiatives. My focus is always on driving sustainable business growth through data-driven decision-making and cross-functional leadership.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leadership Philosophy Quote -->
+        <section class="py-24 px-8 lg:px-16 bg-gray-100 dark:bg-neutral-900 rounded-3xl reveal my-12 text-center">
+            <div class="max-w-4xl mx-auto space-y-8">
+                <p class="text-sm font-bold uppercase tracking-widest text-gray-500">My Approach</p>
+                <blockquote class="text-2xl lg:text-4xl font-semibold leading-tight text-gray-900 dark:text-white">
+                    "Technology alone doesn't create growth. Real transformation happens when business strategy, data, people, and technology work together."
+                </blockquote>
+                <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                    I believe sustainable growth comes from solving business problems with measurable outcomes rather than implementing technology for its own sake.
+                </p>
+            </div>
+        </section>
+
+        <!-- Core Competencies -->
+        <section class="py-24 reveal">
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white mb-4">Core Competencies</h2>
+                <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl">A strategic blend of business acumen and technical depth tailored for regional scale.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-6">
+                <div class="glass-card p-6 rounded-2xl transition-all duration-300">
+                    <i class="ph ph-strategy text-3xl text-gray-900 dark:text-white mb-4"></i>
+                    <h3 class="font-semibold text-gray-900 dark:text-white">Business Strategy</h3>
+                </div>
+                <div class="glass-card p-6 rounded-2xl transition-all duration-300">
+                    <i class="ph ph-rocket-launch text-3xl text-gray-900 dark:text-white mb-4"></i>
+                    <h3 class="font-semibold text-gray-900 dark:text-white">Growth Strategy</h3>
+                </div>
+                <div class="glass-card p-6 rounded-2xl transition-all duration-300">
+                    <i class="ph ph-cpu text-3xl text-gray-900 dark:text-white mb-4"></i>
+                    <h3 class="font-semibold text-gray-900 dark:text-white">AI & Automation</h3>
+                </div>
+                <div class="glass-card p-6 rounded-2xl transition-all duration-300">
+                    <i class="ph ph-arrows-merge text-3xl text-gray-900 dark:text-white mb-4"></i>
+                    <h3 class="font-semibold text-gray-900 dark:text-white">Digital Transformation</h3>
+                </div>
+                <div class="glass-card p-6 rounded-2xl transition-all duration-300">
+                    <i class="ph ph-chart-line-up text-3xl text-gray-900 dark:text-white mb-4"></i>
+                    <h3 class="font-semibold text-gray-900 dark:text-white">Performance Marketing</h3>
+                </div>
+                <div class="glass-card p-6 rounded-2xl transition-all duration-300">
+                    <i class="ph ph-database text-3xl text-gray-900 dark:text-white mb-4"></i>
+                    <h3 class="font-semibold text-gray-900 dark:text-white">Data Analytics</h3>
+                </div>
+                <div class="glass-card p-6 rounded-2xl transition-all duration-300">
+                    <i class="ph ph-users-three text-3xl text-gray-900 dark:text-white mb-4"></i>
+                    <h3 class="font-semibold text-gray-900 dark:text-white">Regional Leadership</h3>
+                </div>
+                <div class="glass-card p-6 rounded-2xl transition-all duration-300">
+                    <i class="ph ph-target text-3xl text-gray-900 dark:text-white mb-4"></i>
+                    <h3 class="font-semibold text-gray-900 dark:text-white">Commercial Optimisation</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Career Journey -->
+        <section class="py-24 border-t border-gray-200 dark:border-neutral-800 reveal">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-4">
+                    <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white lg:sticky lg:top-32">Career Progression</h2>
+                </div>
+                
+                <div class="lg:col-span-8 relative timeline-line pl-8 lg:pl-12 space-y-12">
+                    <!-- Role 1 -->
+                    <div class="relative">
+                        <div class="absolute -left-[43px] lg:-left-[59px] top-1.5 w-4 h-4 rounded-full bg-brand-500 border-4 border-white dark:border-neutral-950"></div>
+                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Senior Manager APAC</h3>
+                        <p class="text-gray-500 dark:text-gray-400 font-medium mt-1">Driving Regional Scale</p>
+                        <div class="mt-4 space-y-3 text-gray-600 dark:text-gray-300">
+                            <p>Managed multi-million Euro budgets and led regional digital acquisition strategies across 12+ markets.</p>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>Built and expanded online research panels across multiple APAC markets.</li>
+                                <li>Optimised customer acquisition through data-driven decision making and automation.</li>
+                                <li>Led cross-functional regional initiatives bridging technology and operational teams.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Role 2 -->
+                    <div class="relative">
+                        <div class="absolute -left-[43px] lg:-left-[59px] top-1.5 w-4 h-4 rounded-full bg-gray-300 dark:bg-neutral-700 border-4 border-white dark:border-neutral-950"></div>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white">Panel Manager APAC</h3>
+                        <div class="mt-3 text-gray-600 dark:text-gray-300">
+                            <p>Led incentive transformation initiatives and scaled panel operations, improving operational efficiency through technology integration.</p>
+                        </div>
+                    </div>
+
+                    <!-- Role 3 -->
+                    <div class="relative">
+                        <div class="absolute -left-[43px] lg:-left-[59px] top-1.5 w-4 h-4 rounded-full bg-gray-300 dark:bg-neutral-700 border-4 border-white dark:border-neutral-950"></div>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white">Client Services Manager</h3>
+                        <div class="mt-3 text-gray-600 dark:text-gray-300">
+                            <p>Partnered with global stakeholders to deliver complex digital projects, ensuring commercial alignment and client satisfaction.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Role 4 -->
+                    <div class="relative">
+                        <div class="absolute -left-[43px] lg:-left-[59px] top-1.5 w-4 h-4 rounded-full bg-gray-300 dark:bg-neutral-700 border-4 border-white dark:border-neutral-950"></div>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white">Digital Marketing Strategist</h3>
+                        <div class="mt-3 text-gray-600 dark:text-gray-300">
+                            <p>Developed and executed performance marketing strategies to drive customer acquisition and optimize conversion funnels.</p>
+                        </div>
+                    </div>
+
+                    <!-- Role 5 -->
+                    <div class="relative">
+                        <div class="absolute -left-[43px] lg:-left-[59px] top-1.5 w-4 h-4 rounded-full bg-gray-300 dark:bg-neutral-700 border-4 border-white dark:border-neutral-950"></div>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white">Early Career (Project Lead / Interactive Developer)</h3>
+                        <div class="mt-3 text-gray-600 dark:text-gray-300">
+                            <p>Built a strong technical foundation through hands-on development and project management, essential for modern digital leadership.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="py-24 border-t border-gray-200 dark:border-neutral-800 reveal">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Education & Credentials</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-8 glass-card rounded-2xl flex flex-col justify-center items-center text-center">
+                    <i class="ph ph-student text-4xl text-gray-900 dark:text-white mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">MBA (Marketing)</h3>
+                    <p class="text-gray-500 mt-2">Graduated with 4.00 GPA</p>
+                </div>
+                <div class="p-8 glass-card rounded-2xl flex flex-col justify-center items-center text-center border-brand-500/30">
+                    <i class="ph ph-books text-4xl text-brand-600 dark:text-brand-500 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">Future DBA Candidate</h3>
+                    <p class="text-gray-500 mt-2">Continuous Executive Education</p>
+                </div>
+                <div class="p-8 glass-card rounded-2xl flex flex-col justify-center items-center text-center">
+                    <i class="ph ph-code text-4xl text-gray-900 dark:text-white mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">BSc Computer Science</h3>
+                    <p class="text-gray-500 mt-2">Strong technical foundation</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- High-Impact CTA Block -->
+        <section class="py-24 lg:py-32 reveal">
+            <div class="bg-gray-900 dark:bg-white rounded-[2.5rem] p-10 lg:p-20 text-center relative overflow-hidden shadow-2xl">
+                <!-- Subtle background decoration -->
+                <div class="absolute top-0 right-0 -mt-20 -mr-20 w-80 h-80 bg-brand-500 opacity-20 rounded-full blur-3xl"></div>
+                <div class="absolute bottom-0 left-0 -mb-20 -ml-20 w-80 h-80 bg-gray-500 opacity-20 rounded-full blur-3xl"></div>
+                
+                <div class="relative z-10 max-w-3xl mx-auto">
+                    <h2 class="text-4xl lg:text-5xl font-bold text-white dark:text-gray-900 mb-6 tracking-tight">
+                        Ready to scale your digital operations?
+                    </h2>
+                    <p class="text-lg text-gray-300 dark:text-gray-600 mb-10">
+                        Available for executive roles, consulting, speaking engagements, and strategic advisory across the APAC region.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                        <a href="mailto:fakhrulzakry@gmail.com?subject=Executive%20Opportunity%20Inquiry%3A%20Digital%20Strategy%20%26%20Leadership" class="w-full sm:w-auto px-8 py-4 bg-brand-500 text-white rounded-full font-semibold hover:bg-brand-600 transition-all shadow-lg hover:shadow-xl flex justify-center items-center gap-2 text-lg">
+                            <i class="ph ph-envelope-simple text-2xl"></i> fakhrulzakry@gmail.com
+                        </a>
+                        <a href="https://linkedin.com/in/fakhrulzakry" target="_blank" class="w-full sm:w-auto px-8 py-4 bg-white/10 dark:bg-gray-900/5 text-white dark:text-gray-900 border border-white/20 dark:border-gray-900/10 rounded-full font-semibold hover:bg-white/20 dark:hover:bg-gray-900/10 transition-all flex justify-center items-center gap-2 text-lg backdrop-blur-sm">
+                            <i class="ph ph-linkedin-logo text-2xl"></i> LinkedIn Profile
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-gray-200 dark:border-neutral-900 py-10 px-6 lg:px-12 text-center text-gray-500 text-sm">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <p>&copy; <span id="year"></span> Fakhrul Zakry. All rights reserved.</p>
+            <div class="flex gap-6">
+                <span class="text-gray-400">Kuala Lumpur, Malaysia</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Theme Toggle Logic
+        const htmlElement = document.documentElement;
+        const themeToggle = document.getElementById('themeToggle');
+        
+        // Default to dark mode (matches executive tech vibe)
+        if (localStorage.theme === 'light') {
+            htmlElement.classList.remove('dark');
+        } else {
+            htmlElement.classList.add('dark');
+        }
+
+        if(themeToggle) {
+            themeToggle.addEventListener('click', () => {
+                htmlElement.classList.toggle('dark');
+                if (htmlElement.classList.contains('dark')) {
+                    localStorage.theme = 'dark';
+                } else {
+                    localStorage.theme = 'light';
+                }
+            });
+        }
+
+        // Scroll Reveal Animation (Intersection Observer)
+        const revealElements = document.querySelectorAll('.reveal');
+        
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                    
+                    // Trigger counter animation if it's the metrics section
+                    const counters = entry.target.querySelectorAll('.counter');
+                    if (counters.length > 0) {
+                        animateCounters(counters);
+                    }
+                }
+            });
+        }, {
+            root: null,
+            threshold: 0.15,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        // Animated Counters
+        function animateCounters(counters) {
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                const duration = 2000; // ms
+                const stepTime = Math.abs(Math.floor(duration / target));
+                let current = 0;
+                
+                const timer = setInterval(() => {
+                    current += 1;
+                    counter.textContent = current;
+                    if (current >= target) {
+                        clearInterval(timer);
+                        counter.textContent = target;
+                    }
+                }, stepTime);
+            });
+        }
+    </script>
+</body>
+</html>
